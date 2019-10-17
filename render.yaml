@@ -3,3 +3,5 @@ services:
     name: helloworld
     env: rust
     healthCheckPath: /healthz
+    buildCommand: cargo build --release
+    startCommand: cargo run --release
